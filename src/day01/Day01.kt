@@ -1,3 +1,7 @@
+package day01
+
+import readInput
+
 fun main() {
     fun List<String>.toSnacks(): List<Int> {
         var current = 0
@@ -21,7 +25,7 @@ fun main() {
         return input.toSnacks().sortedDescending().take(3).sum()
     }
 
-    val input = readInput("Day01")
+    val input = readInput(1)
     println(part1(input))
     println(part2(input))
 }
